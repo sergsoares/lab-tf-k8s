@@ -19,7 +19,7 @@ src
 ## Creating cluster with kind (supporting ingress)
 
 ```
-(lab-tf-k8s) kind create cluster --name tf-k8s --config=src/kind-config/clusterconfig.yml 
+$ kind create cluster --name tf-k8s --config=src/kind-config/clusterconfig.yml 
 ```
 
 ## Creating ingress in kind
