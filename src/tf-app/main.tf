@@ -41,11 +41,11 @@ variable "image" {
 # Resources
 #####################################
 
-# resource "kubernetes_namespace" "test" {
-  # metadata {
-    # name = "nginx"
-  # }
-# }
+resource "kubernetes_namespace" "test" {
+  metadata {
+    name = var.namespace
+  }
+}
 
 resource "kubernetes_deployment" "test" {
   metadata {
@@ -72,7 +72,7 @@ resource "kubernetes_deployment" "test" {
         container {
           name  = var.app
           image = var.image 
-          args  = ["-text=tudo bem sergio"]
+          args  = ["-text=Great lab-tf-k8s"]
         }
       }
     }
