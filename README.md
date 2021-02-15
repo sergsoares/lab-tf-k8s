@@ -40,3 +40,5 @@ $ terraform apply -auto-approve
 ## References
 
 - https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/guides/getting-started#kubernetes
+- https://aperogeek.fr/kubernetes-deployment-with-terraform/
+
